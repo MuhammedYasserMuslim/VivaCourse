@@ -1,5 +1,5 @@
 
-import {Proudct} from "./prouduct";
+import {Proudct} from "../models/prouduct";
 
 
 export class ProductService {

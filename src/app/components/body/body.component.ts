@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
-import {ProductService} from "../../product.service";
-import {Proudct} from "../../prouduct";
+import {ProductService} from "../../Services/product.service";
+import {Proudct} from "../../models/prouduct";
 
 @Component({
   selector: 'app-body',

@@ -1,0 +1,18 @@
+<table class="table table-dark">
+  <thead>
+  <tr>
+    <th scope="col">id</th>
+    <th scope="col">name</th>
+    <th scope="col">salary</th>
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let person of persons">
+    <th >{{person._id}}</th>
+    <td>{{person._name}}</td>
+    <td>{{person._salary}}</td>
+  </tr>
+  </tbody>
+</table>
+<button class="btn-dark" type="button" (click)="getPersons()"> GET PERSONS</button>

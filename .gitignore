@@ -41,6 +41,4 @@ testem.log
 .DS_Store
 Thumbs.db
 
-/src/app/product.service.spec.ts
-/src/app/product.service.ts
-/src/app/prouduct.ts
+

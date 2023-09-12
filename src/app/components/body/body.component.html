@@ -1,33 +1,14 @@
-<h1>Muhammed Yasser</h1>
+<table class="table">
+  <tr>
+    <th>id</th>
+    <th>name</th>
+    <th>price</th>
+  </tr>
+  <tr *ngFor="let p of proudcts">
+    <td>{{p._id}}</td>
+    <td>{{p._name}}</td>
+    <td>{{p._price}}</td>
+  </tr>
 
-
-<div *ngIf="myInfo">
-
-  <h2>I Am 22 Years Old</h2>
-</div>
-
-<button type="button" class="btn btn-primary" (click)="changInfo()">
-  change name
-</button>
-
-
-<div>{{myName('ali')}}</div>
-
-
-<div *ngFor="let n of names">
-  <h1>{{names}}</h1>
-</div>
-<div>{{name}}</div>
-
-<div>{{sum()}}</div>
-
-
-
-<div>
-  <input type="text" name="" [(ngModel)]="someText">
-  <p>{{someText}}</p>
-</div>
-<hr>
-<hr>
-
-{{myDate}}
+</table>
+<button class="alert-secondary" type="button" (click)="getProudct()"> GET Proudct</button>

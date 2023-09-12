@@ -1,4 +1,6 @@
 import {Component} from '@angular/core';
+import {ProductService} from "../../product.service";
+import {Proudct} from "../../prouduct";
 
 @Component({
   selector: 'app-body',
@@ -7,31 +9,16 @@ import {Component} from '@angular/core';
 })
 export class BodyComponent {
 
-  myDate = new Date();
+  proudcts:Proudct[]=[];
 
+  productService;
 
-  someText:string="you can change me";
-
-  num1:number=4;
-  num2:number=5;
-
-
-  sum():number{
-    return this.num1+this.num2;
+  constructor() {
+    this.productService=new ProductService();
   }
-  myInfo = false;
-
-  names:string[] =['muhammed','Mahmoud','Ali','Salah'];
-
-  changInfo() {
-    this.myInfo = !this.myInfo;
-
-  }
-
-  myName(name: string) {
-    console.log(`My name is${name}`)
+  getProudct(){
+    this.proudcts=this.productService.getAllProudct();
   }
 
 
-  name:string = 'Mahmoud nader';
 }
